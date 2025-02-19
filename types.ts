@@ -11,6 +11,6 @@ export type Employee = {
     id?: number;
     name: string;
     location: string;
-    noofemployees: number;
+    noofemployees: string;
     description: string;
   }

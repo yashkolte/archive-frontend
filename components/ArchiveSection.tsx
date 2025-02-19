@@ -36,18 +36,18 @@ export default function ArchiveSection({ type }: ArchiveSectionProps) {
 
   return (
     <div className="bg-white shadow sm:rounded-lg p-6">
-      <h2 className="text-xl font-semibold mb-4">Archive Operations</h2>
+      <h2 className="text-xl text-black font-semibold mb-4">Archive Operations</h2>
       
       <div className="space-y-6">
         <div>
-          <h3 className="text-lg font-medium mb-2">Create Archive</h3>
+          <h3 className="text-lg text-black font-medium mb-2">Create Archive</h3>
           <div className="flex gap-4">
             <input
               type="text"
               placeholder="Archive file name"
               value={fileName}
               onChange={(e) => setFileName(e.target.value)}
-              className="flex-1 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="flex-1 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 text-black p-2"
             />
             <button
               onClick={handleCreateArchive}
@@ -59,14 +59,14 @@ export default function ArchiveSection({ type }: ArchiveSectionProps) {
         </div>
 
         <div>
-          <h3 className="text-lg font-medium mb-2">Read Archive</h3>
+          <h3 className="text-lg font-medium mb-2 text-black">Read Archive</h3>
           <div className="flex gap-4">
             <input
               type="text"
               placeholder="Archive file path"
               value={filePath}
               onChange={(e) => setFilePath(e.target.value)}
-              className="flex-1 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="flex-1 rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 text-black p-2"
             />
             <button
               onClick={handleReadArchive}
@@ -79,8 +79,8 @@ export default function ArchiveSection({ type }: ArchiveSectionProps) {
 
         {archiveContent && (
           <div>
-            <h3 className="text-lg font-medium mb-2">Archive Content</h3>
-            <pre className="bg-gray-50 p-4 rounded-md overflow-auto">
+            <h3 className="text-lg font-medium mb-2 text-black">Archive Content</h3>
+            <pre className="bg-gray-50 p-4 rounded-md overflow-auto text-black">
               {archiveContent}
             </pre>
           </div>
